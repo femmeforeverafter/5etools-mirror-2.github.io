@@ -43,6 +43,15 @@ class NavBar {
 		};
 		document.getElementById("navigation").prepend(btnShowHide);
 
+		var inIframe;
+      try {
+      	inIframe = window.self !== window.top;
+      } catch(Exception) {
+      	inIframe = true;
+      }
+
+      if (inIframe) document.getElementById("navigation").remove();
+
 		this._addElement_li(null, "index.html", "Home", {isRoot: true});
 
 		this._addElement_dropdown(null, NavBar._CAT_RULES);

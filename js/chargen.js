@@ -54,11 +54,13 @@ function updateName() {
 }
 
 function preview(page) {
-	var url = 'http://localhost:63342/5etools-mirror-2.github.io/' + page + '.html';
-	console.log(url);
-	$("#contentPreview").html("<iframe id='contentPreviewWindow' src='http://localhost:63342/5etools/5etools-mirror-2.github.io/" + page + ".html' style='width:100%' height='500'></iframe><button onclick=\"addSelection('" + page + "')\">Choose</button>");
+	console.log("Getting " + page + "...");
+	$("#contentPreview").html("<iframe id='contentPreviewWindow' src='/" + page + ".html' style='width:100%; nav{display:none}' height='500'></iframe><button onclick=\"addSelection('" + page + "')\">Choose</button>");
 
-	//$("#contentPreviewWindow").contents().find('nav').remove();
+	$("#contentPreviewWindow").ready(function() {
+		$("#contentPreviewWindow").contents().find("nav").remove();
+	})
+
 }
 
 function addSelection(field) {
