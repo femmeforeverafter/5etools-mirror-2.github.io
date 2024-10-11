@@ -1,0 +1,110 @@
+{
+	"type": "statblockInline",
+	"style": "inset",
+	"dataType": "monster",
+	"data": {
+		"name": "",
+		"source": "",
+		"size": [],
+		"type": {
+			"type": "humanoid"
+		},
+		"alignment": ["N"],
+		"ac": [{
+			"ac": 10,
+			"from": []
+		}],
+		"hp": {
+			"average": 0,
+			"formula": ""
+		},
+		"speed": {"walk": 30},
+		"str": 8,
+		"dex": 8,
+		"con": 8,
+		"int": 8,
+		"wis": 8,
+		"cha": 8,
+		"skill": {},
+		"senses": [],
+		"passive": 9,
+		"resist": [],
+		"languages": [],
+		"cr": "1",
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"type": "spellcasting",
+				"headerEntries": [],
+				"spells": {
+					"0": {
+						"spells": []
+					},
+					"1": {
+						"slots": null,
+						"spells": []
+					},
+					"2": {
+						"slots": null,
+						"spells": []
+					},
+					"3": {
+						"slots": null,
+						"spells": []
+					},
+					"4": {
+						"slots": null,
+						"spells": []
+					},
+					"5": {
+						"slots": null,
+						"spells": []
+					},
+					"6": {
+						"slots": null,
+						"spells": []
+					},
+					"7": {
+						"slots": null,
+						"spells": []
+					},
+					"8": {
+						"slots": null,
+						"spells": []
+					},
+					"9": {
+						"slots": null,
+						"spells": []
+					}
+				},
+				"ability": "int"
+			}
+		],
+		"trait": [],
+		"action": [
+			{
+				"name": "Unarmed Strike",
+				"entries": [
+					"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}0 ({@damage 1d1 + str 8}) bludgeoning damage."
+				]
+			}
+		],
+		"bonus": [
+			{
+				"name": "",
+				"entries": [
+				]
+			}
+		],
+		"reaction": [
+			{
+				"name": "",
+				"entries": []
+			}
+		],
+		"attachedItems": [
+			"longbow|phb",
+			"longsword|phb"
+		]
+	}
+}

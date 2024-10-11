@@ -3027,6 +3027,7 @@ globalThis.UrlUtil = {
 	_getClassesPageStatePart_feature (feature) { return `feature=${UrlUtil.mini.compress(`${feature.ixLevel}-${feature.ixFeature}`)}`; },
 };
 
+UrlUtil.PG_CHARGEN = "chargen.html";
 UrlUtil.PG_BESTIARY = "bestiary.html";
 UrlUtil.PG_SPELLS = "spells.html";
 UrlUtil.PG_BACKGROUNDS = "backgrounds.html";
@@ -3080,6 +3081,7 @@ UrlUtil.PG_DECKS = "decks.html";
 UrlUtil.URL_TO_HASH_GENERIC = (it) => UrlUtil.encodeArrayForHash(it.name, it.source);
 
 UrlUtil.URL_TO_HASH_BUILDER = {};
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CHARGEN] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BESTIARY] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SPELLS] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BACKGROUNDS] = UrlUtil.URL_TO_HASH_GENERIC;
